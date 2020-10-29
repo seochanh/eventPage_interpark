@@ -1,0 +1,145 @@
+@charset 'utf-8';
+
+/* 태블릿 */
+body {
+    font-size: 18px; 
+}
+h3, h4 {
+    font-size: 22px;    
+}
+
+
+.container {
+    width: 92%;
+}
+
+
+/* title */
+header {
+    height: 117.188vw;
+}
+.title h3 {
+    font-size: 36px;
+    align-self: flex-start;
+}
+header img#girl {
+    width: 89%;
+    left: 5%;
+}
+
+/* top10 */
+.top10 {
+    background-position: center bottom, 180% 22%, 0;
+    background-size: contain, 88vw, contain;
+}
+.top10 h2 {
+    font-size: 66px;
+}
+#top10:after {
+    width: 214px; height: 34px;
+}
+.book {
+    width: 100%;
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.book #description {
+    width: 48%;
+}
+.book img {
+    width: 48%; 
+}
+.book h2 {
+    font-size: 40px;
+    text-align: left;
+    margin-top: 0;
+}
+.book h2 span:before {
+    content: '\A';
+    white-space: pre;
+}
+.book h2 ~ p {
+    margin-bottom: 24px;
+}
+ul.list {
+    margin-top: 168px;
+}
+ul.list li:first-child {
+    display: block;
+}
+ul.list li {
+    width: 18%;
+}
+
+/* issue */
+.issue {
+    padding: 11.458vw 0;
+}
+.issue h2 {
+    font-size: 45px;
+}
+.issue .text > p {
+    margin: 8px 0;
+    text-align: center;
+}
+.issue .text > p:nth-child(2) {
+    display: block;
+}
+.issue ul {
+    width: 74.5%;
+    flex-direction: row;
+    margin-top: 5.2vw;
+}
+.issue li {
+    width: 33.3333%;
+}
+.issue li a {
+    flex-flow: column wrap;
+}
+.issue li img {
+    width: 100%;
+}
+.issue button {
+    width: 286px; height: 70px;
+    border-radius: 68px;
+    font-size: 26px;
+}
+.issue-wrapper img#pot {
+    bottom: 0; right: 0;
+    width: 27vw;
+}
+
+/* goods */
+.goods h2 {
+    font-size: 45px;
+}
+.goods h2 span:before {
+    content: '';
+    white-space: pre;
+}
+.goods p {
+    font-size: 24px;
+}
+.goods p span {
+    display: inline;
+}
+.goods p span:after {
+    width: 210px; height: 14px;
+}
+.goods ul {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.goods li {
+    width: 30%;
+}
+.goods li img {
+    width: 100%;
+    margin: 64px 0 16px;
+}
+.goods li div {
+    width: 100%; height: 70px;
+    border-radius: 33px;
+    font-size: 21px;
+}

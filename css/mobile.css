@@ -1,0 +1,321 @@
+@charset 'utf-8';
+
+body { 
+    margin: 0;
+    font-family: 'Noto Sans KR','Malgun Gothic','맑은 고딕',helvetica,sans-serif;
+    font-size: 14px/1.3; font-weight: 400px;
+    color: #303030;
+    text-align: center;
+}
+img { 
+    vertical-align: top; 
+}
+h1, h2, h3, h4 {
+    margin: 0; 
+    font-family: "S-CoreDream";
+    font-weight: 400;
+    color: #101010;  
+    letter-spacing: -0.1em;
+}
+h3, h4 {
+    color: #303030;
+    margin-bottom: 1.25vw; 
+}
+ul, li {
+    list-style: none; 
+    padding: 0; margin: 0;
+}
+a { 
+    display: block; 
+    color: inherit; 
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "S-CoreDream";
+}
+.text > p {
+    text-align: left;
+    line-height: 1.4;
+    margin: 4px 0;
+}
+
+.container {
+    padding-top: 16vw; 
+    width: 86.875%; 
+    margin: 0 auto; 
+    display: flex; flex-direction: column;
+    align-items: center;
+}
+
+
+/* header  */
+header { 
+    background-color: #9AD5FF;
+    background-image: url(../images/title_triangle.svg), url(../images/title_bg_top.svg), url(../images/title_bg_bottom.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom, right top, left bottom;
+    background-size: auto, 70%, 40%;
+    position: relative; 
+    height: 124.063vw;
+    overflow: hidden;
+}
+.title h3 { 
+    font-size: 16px; font-weight: 300;
+}
+.title h3 span {
+    font-weight: 600;
+}
+header h1 {
+    display: flex; justify-content: center;
+}
+header h1 img { 
+    width: 92%;
+    margin-top: 20vw;
+}
+header img#girl { 
+    width: 88%; 
+    position: absolute; 
+    left: 18%; bottom: -2.188vw;
+}
+header img#book {
+    display: none;
+}
+
+/* top10 */
+.top10 {
+    background-image: url(../images/issue_wave.svg), url(../images/top10_circle.svg), url(../images/top10_bg.svg);
+    background-repeat: no-repeat, no-repeat, repeat-y;
+    background-position: center bottom, 50% 42%, 0;
+    background-size: contain, calc(430px + 25%), contain;
+    padding-bottom: 38.75vw;
+}
+.top10 h2 {
+    font-size: 36px; 
+}
+.top10 h2 span {
+    font-weight: 700; 
+}
+#top10 {
+    position: relative;
+    z-index: 1;
+}
+#top10 span {
+    letter-spacing: -0.05em;
+}
+#top10:after {
+    content: ''; display: block;
+    background-color: #FFD642; 
+    width: 114px; height: 14px;
+    position: absolute; z-index: -1;
+    left: 50%; transform: translateX(-48%);
+    bottom: 4px;
+}
+
+.book {
+    width: 73%;
+    margin-top: 12.5vw;
+}
+.book img { 
+    width: 94%;
+}
+.book h2 { 
+    font-size: 24px; font-weight: 700;
+    text-align: center;
+    margin-top: 32px;
+}
+.book h2 ~ p {
+    text-align: right; 
+    clear: both;
+}
+.book h2 ~ p span {
+    font-weight: 700;
+}
+
+ul.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+} 
+ul.list li:first-child {
+    display: none;
+}
+ul.list li {
+    width: 30%; flex: 0  0 auto;
+    display: flex; flex-direction: column;
+}
+ul.list div {
+    display: flex; justify-content: center;
+    align-items: center;
+    width: 55px; height: 20px;
+    background: url(../images/top10_roundbox.png) no-repeat center;
+    background-size: contain;
+    margin: 5px auto 3.75vw;
+}
+ul.list a {
+    color: #fff;
+    font-size: 12px;
+    width: 100% 
+}
+ul.list img {
+    width: 100%; 
+}
+
+/* issue */
+.issue-wrapper { 
+    background-color: #FFEC73;
+    position: relative;
+    padding-bottom: 27.5vw;
+}
+.issue {
+    background-color: #fff;
+    box-shadow: 12px 0 54px rgba(0, 0, 0, 0.25);
+    padding-bottom: 54px;
+}
+.issue h2 {
+    color: #1B7BDF;
+    font-size: 24px; font-weight: 600;
+    margin-bottom: 32px;
+}
+.issue .text > p {
+    width: 62.5vw;
+    margin-bottom: 32px; 
+}
+.issue .text > p:nth-of-type(2) {
+    display: none;
+}
+.issue ul {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 73%;
+    margin-bottom: 48px;
+}
+.issue li a {
+    display: flex;
+    align-items: center; 
+}
+.issue li img {
+    width: 50%;
+}
+.issue li p {
+    margin: 0 0 0 24px;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    font-family: "S-CoreDream";
+}
+.issue li p:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%; right: -22px;
+    transform: translateY(-50%);
+    width: 14px; height: 14px;
+    background: url(../images/issue_arrow.png) no-repeat;
+    background-size: contain;
+}
+.issue button {
+    background-color: #0268D7;
+    opacity: 0.8;
+    color: #fff;
+    font: 700 13px "S-CoreDream";
+    border: none; border-radius: 20px;
+    width: 170px; height: 42px; 
+    box-shadow: 0 3px 6px #3030307c;
+    outline: none;
+    cursor: pointer;
+}
+.issue button:hover { 
+    background: #0268D7; 
+    opacity: 1;
+    border: 1px solid rgba(0, 0, 0, 0.05); box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2); 
+    text-shadow: -1px -1px 0 #012A57; 
+}
+
+.issue-wrapper img#pot {
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 35.625vw;
+}
+
+/* goods */
+.goods-wrapper {
+    background-color: #C2E6FF;
+}
+.goods {
+    padding-bottom: 20vw;
+}
+.goods h2 {
+    font-size: 24px; font-weight: 700;
+    color: #0268D7;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.goods h2 span:before {
+    content: '\A';
+    white-space: pre;
+}
+.goods p {
+    font: 400 14px/1.3 "S-CoreDream";
+    margin: 0;
+    width: 62.5vw;
+}
+.goods p span {
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+.goods p span:after {
+    content: '';
+    display: block;
+    width: 124px; height: 8px;
+    background-color: #FFD642;
+    position: absolute;
+    bottom: -2px;
+    left: 50%; transform: translateX(-50%);
+    z-index: -1;
+}
+.goods ul {
+    display: flex; flex-flow: column wrap;
+}
+.goods li {
+    display: flex; flex-flow: column wrap;
+    align-items: center;
+}
+.goods li img {
+    width: 43.75vw;
+    margin: 40px 0 8px;
+}
+.goods li div {
+    text-align: center;
+    width: 43.75vw; height: 42px;
+    background-color: #0268D7;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center; align-items: center;
+    color: #fff;
+    font: 400 14px/1.3 "S-CoreDream";
+    margin: 0;
+    border-radius: 20px;
+}
+
+/* footer */
+footer {
+    padding: 6.25vw 7.5vw;
+    box-sizing: border-box;
+    text-align: left;
+}
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+footer li {
+    line-height: 1.6;
+    text-indent: -8px;
+    padding-left: 10px;
+}
+footer li:before {
+    content: '·';
+}
